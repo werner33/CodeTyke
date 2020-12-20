@@ -1,0 +1,13 @@
+@mixin subheader {
+    font-size: 1.1em;
+    text-align: center;
+    margin: 25px 10px;
+}
+
+@mixin spinAnimation($duration) {
+    animation: spin $duration linear infinite;
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+}
